@@ -44,9 +44,6 @@ function App() {
         setDailyWeather(weather.data.daily)
         setCurrent(weather.data.current)
         setIsQuering(false)
-        console.log(coords.data[0])
-        console.log(weather)
-        console.log(weather.data)
       } catch(error){
         setIsQuering(false)
         console.log(error)
