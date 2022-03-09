@@ -19,11 +19,11 @@ function Forecast (props){
                                     <Typography>Temperature now</Typography>
                                 </Grid>
                                 <Grid item xs={6} sm={8} md={12}>
+                                    <Typography>{`${MONTH_LABELS[CURRENT_DATE.getMonth()]} ${CURRENT_DATE.getDate()}, ${CURRENT_DATE.getFullYear()}`}</Typography>
+                                </Grid>
+                                <Grid item xs={6} sm={8} md={12}>
                                     <Typography>{`${props.current.temp} °C`}</Typography>
                                 </Grid>
-                            </Grid>
-                            <Grid item xs={4} sm={8} md={12}>
-                                <Typography>{`${MONTH_LABELS[CURRENT_DATE.getMonth()]} ${CURRENT_DATE.getDate()}, ${CURRENT_DATE.getFullYear()}`}</Typography>
                             </Grid>
                         </Paper>
                     </Grid>
@@ -40,6 +40,9 @@ function Forecast (props){
                                         <Grid item xs={6} sm={8} md={12}>
                                             <Typography>Forecast temperature</Typography>
                                         </Grid>
+                                        <Grid item xs={6} sm={8} md={12}>
+                                            <Typography>{`${MONTH_LABELS[DATE.getMonth()]} ${DATE.getDate()}, ${DATE.getFullYear()}`}</Typography>
+                                        </Grid>
                                         <Grid item xs={3} sm={4} md={6}>
                                             <Typography>Min</Typography>
                                         </Grid>
@@ -52,9 +55,6 @@ function Forecast (props){
                                         <Grid item xs={3} sm={4} md={6}>
                                             <Typography>{`${day.temp.max} °C`}</Typography>
                                         </Grid>
-                                    </Grid>
-                                    <Grid item xs={4} sm={8} md={12}>
-                                        <Typography>{`${MONTH_LABELS[DATE.getMonth()]} ${DATE.getDate()}, ${DATE.getFullYear()}`}</Typography>
                                     </Grid>
                                 </Paper>
                             </Grid>
