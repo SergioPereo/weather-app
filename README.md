@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+You can check the running project in [this link](https://weather-app-2-uetvy.ondigitalocean.app/).
+
 ## Available Scripts
 
 In the project directory, you can run:
