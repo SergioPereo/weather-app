@@ -31,7 +31,6 @@ function App() {
             q: query
           }
         })
-        setDirection(`${coords.data[0].country}, ${coords.data[0].state}, ${coords.data[0].city_name}.`)
         const weather = await axios.get(OPEN_WEATHER_BASE_URL, {
           params: {
             lat: coords.data[0].lat,
@@ -41,6 +40,7 @@ function App() {
             appid: API_KEY
           }
         })
+        setDirection(`${coords.data[0].country}, ${coords.data[0].state}, ${coords.data[0].city_name}.`)
         setDailyWeather(weather.data.daily)
         setCurrent(weather.data.current)
         setIsQuering(false)

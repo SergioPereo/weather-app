@@ -60,7 +60,7 @@ const Search = styled('div')(({ theme }) => ({
                       <SearchIcon />
                   </SearchIconWrapper>
                   <StyledInputBase
-                      placeholder="Ciudad..."
+                      placeholder="City..."
                       inputProps={{ 'aria-label': 'search' }}
                       onKeyDown={props.handleKeyDown}
                       onChange={props.handleOnChange}
